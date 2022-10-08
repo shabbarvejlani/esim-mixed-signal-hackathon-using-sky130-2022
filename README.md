@@ -11,17 +11,17 @@
 Additional, the user takes care of any analog to digital and digital to analog signal interactions by appropriate explicitly instantiating interface blocks(namely adc/dac_briges which are made available in the eSim model library) at the analog<->digital model boundaries.
 
 # NgVeri tool flow:
-## step1:
+## Step1:
 verilog to ngveri wrapper creation.
 
-## step2:
+## Step2:
 - create circuit schematic with analog components and instantiate the ngveri wrapper.
 - connect the outputs from the digital to analog using dac_bridge_x
 - connect the inputs to the digital circuit using the adc_brdige_x
 - digital blocks can be cascaded/connected directly to each other wihout the need of bridge.
 - generate spice .cir netlist. This is a kicad netlist.
 
-## step3:
+## Step3:
 - convert from kicad netlist to ngspice netlist.
 - allows to specify type of simulation ac/dc/transient and set parameters for respective sim type.
 - specify the configuration of voltage sources in "source details" tab.
@@ -30,7 +30,7 @@ verilog to ngveri wrapper creation.
 - The generated ngspice netlist is ".cir.out".
 
 
-## step4:
+## Step4:
  - run simulation.
  - It will render all the waveforms in "gaw", but each output will be in separate window
  - To customize the plot, we can edit the ".cir.out" directly, to add plots to same window.
@@ -42,7 +42,8 @@ The delay cell is named "epc_unit" and implemented as a separate subckt.
 The nand logic gate is created using ngVeri flow in verilog hdl.   
 adc_brige and dac_bridge are used to interface the nand_gate in the schematic   
 
-![plot](images/Screenshot_20221008-234249_aRDP%20Free.jpg)
+![plot](images/Screenshot_20221008-234249_aRDP%20Free.jpg "Epc Top schematic")
+![plot](images/Screenshot_20221008-234319_aRDP%20Free.jpg "Epc unit subckt")
 
 
 # Results
