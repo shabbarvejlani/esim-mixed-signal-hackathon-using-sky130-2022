@@ -6,7 +6,7 @@
 # Mixed Signal Flow
  - The mixed signal simulation consists of of mix of digital circuits which are simulator using digital simulator and the analog portion on an analog simulator. 
  - In the eSim tool used, the digital simulations are done using verilator tool and the analog simulations are done using ngspice tool.
- - For user, they do not need to call the two tools separately, instead ngspice is the toplevel tool which calls verilator in background.
+ - For user, they do not need to call the two tools separately, instead ngspice is the toplevel tool which calls verilator(compiled executable) in background.
  - The interface between ngspice and verilator is made possible using ngVeri tool, which creates a ngspice comptatible model.
 Additional, the user takes care of any analog to digital and digital to analog signal interactions by appropriate explicitly instantiating interface blocks(namely adc/dac_briges which are made available in the eSim model library) at the analog<->digital model boundaries.
 
