@@ -43,6 +43,7 @@ The nand logic gate is created using ngVeri flow in verilog hdl.
 adc_brige and dac_bridge are used to interface the nand_gate in the schematic   
 
 |Epc Top Schematic | Epc Unit Subckt|
+|------------------|----------------|
 |![alt text](images/Screenshot_20221008-234249_aRDP%20Free.jpg) | ![alt text](images/Screenshot_20221008-234319_aRDP%20Free.jpg)| 
 
 
