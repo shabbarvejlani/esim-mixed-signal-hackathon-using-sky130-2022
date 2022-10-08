@@ -54,6 +54,9 @@ adc_brige and dac_bridge are used to interface the nand_gate in the schematic
 |----------------|
 |![alt text](images/Screenshot_20221008-234319_aRDP%20Free.jpg)| 
 
+|Nand gate(dig_nand2)|
+|--------------------|
+|![alt text](images/Screenshot_20221008-234434_aRDP%20Free.jpg)| 
 
 # Results
 The circuit should have functioned as a damped oscialltor which starts to oscillate and quickly settles the output  COMP should have settled to 1 or 0 based on relative values of VINP(V2) and VINM(V3).
