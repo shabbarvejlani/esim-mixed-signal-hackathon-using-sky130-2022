@@ -81,4 +81,9 @@ It needs to be further investigated if its a tool issue or circuit tuning/setup 
 One possible try could be to have the nand gate too in analog schematic using sky130 cells and checking if output matches in analog only simulation.
 
 # Acknowledgements
-
+1. http://iitb.ac.in
+2. https://www.google.co.in
+3. https://fossee.in
+4. https://spoken-tutorial.org
+5. https://www.vlsisystemdesign.com
+6. https://www.c2s.gov.in
