@@ -59,7 +59,7 @@ adc_brige and dac_bridge are used to interface the nand_gate in the schematic
 The circuit should have functioned as a damped oscialltor which starts to oscillate and quickly settles the output  COMP should have settled to 1 or 0 based on relative values of VINP(V2) and VINM(V3).
 
 Expected waveform:
-
+![alt text](images/SmartSelect_20220928_233337_Samsung%20Notes.jpg)
 
 Simulation waveform:
 ![alt text](images/Screenshot_20221008-234127_aRDP%20Free.jpg)
