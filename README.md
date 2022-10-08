@@ -43,6 +43,27 @@ The nand logic gate is created using ngVeri flow in verilog hdl.
 adc_brige and dac_bridge are used to interface the nand_gate in the schematic
 
 
+
+# Results
+The circuit should have functioned as a damped oscialltor which starts to oscillate and quickly settles the output  COMP should have settled to 1 or 0 based on relative values of VINP(V2) and VINM(V3).
+
+Expected waveform:
+
+
+Simulation waveform:
+
+
+
+
+
 # Learning Outcomes
-- Understood the mixed signal flow using opensource tools.
-- 
+- Understood the mixed signal flow in general.
+- Learnt basics of kicad(schematic capture), ngspice(spice simulator), ngVeri(makerchip ngspice wrapper over verilated code), gaw(analog waveform viewer) and sky130 library intergration
+- Understood basics of sky130 primitive library.
+- Understood how to perform basic analog/mixed-signal simulations in eSim.
+- Challenges in simualating a oscillator circiut
+
+# Further Work
+Unfortunately, the simulator output was not as per expecation. 
+It needs to be further investigated if its a tool issue or circuit tuning/setup issue.
+One possible try could be to have the nand gate too in analog schematic using sky130 cells and checking if output matches in analog only simulation.
