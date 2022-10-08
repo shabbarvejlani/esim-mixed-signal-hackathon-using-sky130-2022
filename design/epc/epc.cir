@@ -1,0 +1,33 @@
+* /home/shabbarvejlani/eSim-Workspace/epc/epc.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sat 08 Oct 2022 11:07:21 PM IST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_X1-Pad1_ Net-_U6-Pad2_ Net-_X1-Pad1_ Net-_X1-Pad4_ Net-_X1-Pad5_ GND epc_unit		
+X3  Net-_X3-Pad1_ Net-_X1-Pad4_ Net-_X3-Pad1_ Net-_X3-Pad4_ Net-_X1-Pad5_ GND epc_unit		
+X5  Net-_X1-Pad1_ Net-_X3-Pad4_ Net-_X1-Pad1_ Net-_X5-Pad4_ Net-_X1-Pad5_ GND epc_unit		
+X7  Net-_X3-Pad1_ Net-_X5-Pad4_ Net-_X3-Pad1_ COMP Net-_X1-Pad5_ GND epc_unit		
+X6  Net-_X1-Pad1_ Net-_X6-Pad2_ Net-_X1-Pad1_ Net-_X4-Pad2_ Net-_X1-Pad5_ GND epc_unit		
+X4  Net-_X3-Pad1_ Net-_X4-Pad2_ Net-_X3-Pad1_ Net-_X2-Pad2_ Net-_X1-Pad5_ GND epc_unit		
+X2  Net-_X1-Pad1_ Net-_X2-Pad2_ Net-_X1-Pad1_ Net-_U5-Pad1_ Net-_X1-Pad5_ GND epc_unit		
+v1  Net-_X1-Pad5_ GND DC		
+v2  START GND pulse		
+v3  Net-_X1-Pad1_ GND DC		
+v4  Net-_X3-Pad1_ GND DC		
+scmode1  SKY130mode		
+U2  COMP plot_v1		
+U1  START plot_v1		
+U3  Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ dig_nand2		
+X8  Net-_X3-Pad1_ Net-_U7-Pad2_ Net-_X3-Pad1_ Net-_X6-Pad2_ Net-_X1-Pad5_ GND epc_unit		
+U10  Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ dig_nand2		
+U9  COMP Net-_U10-Pad1_ adc_bridge_1		
+U8  START Net-_U10-Pad2_ adc_bridge_1		
+U4  START Net-_U3-Pad1_ adc_bridge_1		
+U5  Net-_U5-Pad1_ Net-_U3-Pad2_ adc_bridge_1		
+U6  Net-_U3-Pad3_ Net-_U6-Pad2_ dac_bridge_1		
+U7  Net-_U10-Pad3_ Net-_U7-Pad2_ dac_bridge_1		
+
+.end

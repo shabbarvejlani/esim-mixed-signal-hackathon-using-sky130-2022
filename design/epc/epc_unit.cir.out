@@ -1,0 +1,16 @@
+* /home/shabbarvejlani/esim-2.3/library/subcircuitlibrary/epc_unit/epc_unit.cir
+
+xsc3 net-_sc2-pad1_ net-_sc2-pad2_ net-_sc3-pad3_ net-_sc3-pad4_ sky130_fd_pr__nfet_01v8 
+xsc4 net-_sc3-pad3_ net-_sc4-pad2_ net-_sc3-pad4_ net-_sc3-pad4_ sky130_fd_pr__nfet_01v8 
+xsc1 net-_sc1-pad1_ net-_sc1-pad2_ net-_sc1-pad3_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 
+xsc2 net-_sc2-pad1_ net-_sc2-pad2_ net-_sc1-pad1_ net-_sc1-pad3_ sky130_fd_pr__pfet_01v8 
+* u1  net-_sc1-pad2_ net-_sc2-pad2_ net-_sc4-pad2_ net-_sc3-pad4_ net-_sc1-pad3_ net-_sc2-pad1_ port
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
