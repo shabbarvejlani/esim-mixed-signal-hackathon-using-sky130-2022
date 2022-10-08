@@ -37,10 +37,10 @@ verilog to ngveri wrapper creation.
  - eSim has embedded python plot window too.
 
 # Edge Pursuit Comparator 
-The edge pursuit comparator consists of a series of delay cells and nand gates which function as delay cum control cell.
-The delay cell is named "epc_unit" and implemented as a separate subckt.
-The nand logic gate is created using ngVeri flow in verilog hdl.
-adc_brige and dac_bridge are used to interface the nand_gate in the schematic
+The edge pursuit comparator consists of a series of delay cells and nand gates which function as delay cum control cell.   
+The delay cell is named "epc_unit" and implemented as a separate subckt.   
+The nand logic gate is created using ngVeri flow in verilog hdl.   
+adc_brige and dac_bridge are used to interface the nand_gate in the schematic   
 
 ![plot](images/Screenshot_20221008-234249_aRDP%20Free.jpg)
 
