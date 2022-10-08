@@ -1,4 +1,4 @@
-# esim-mixed-signal-hackathon-2022
+# esim-mixed-signal-hackathon-using-sky130-2022
 
 ## installation of esim
 ./install-eSim.sh --install
