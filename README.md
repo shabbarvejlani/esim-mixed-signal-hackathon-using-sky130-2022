@@ -42,7 +42,7 @@ The delay cell is named "epc_unit" and implemented as a separate subckt.
 The nand logic gate is created using ngVeri flow in verilog hdl.
 adc_brige and dac_bridge are used to interface the nand_gate in the schematic
 
-![plot]("images/Screenshot_20221008-234249_aRDP Free.jpg")
+![plot](images/Screenshot_20221008-234249_aRDP%20Free.jpg)
 
 
 # Results
