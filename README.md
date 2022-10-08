@@ -3,6 +3,14 @@
 ## installation of esim
 ./install-eSim.sh --install
 
+# Mixed Signal Flow
+ - The mixed signal simulation consists of of mix of digital circuits which are simulator using digital simulator and the analog portion on an analog simulator. 
+ - In the eSim tool used, the digital simulations are done using verilator tool and the analog simulations are done using ngspice tool.
+ - For user, they do not need to call the two tools separately, instead ngspice is the toplevel tool which calls verilator in background.
+ - The interface between ngspice and verilator is made possible using ngVeri tool, which creates a ngspice comptatible model.
+Additional, the user takes care of any analog to digital and digital to analog signal interactions by appropriate explicitly instantiating interface blocks(namely adc/dac_briges which are made available in the eSim model library) at the analog<->digital model boundaries.
+
+# NgVeri tool flow:
 ## step1:
 verilog to ngveri wrapper creation.
 
@@ -27,3 +35,14 @@ verilog to ngveri wrapper creation.
  - It will render all the waveforms in "gaw", but each output will be in separate window
  - To customize the plot, we can edit the ".cir.out" directly, to add plots to same window.
  - eSim has embedded python plot window too.
+
+# Edge Pursuit Comparator 
+The edge pursuit comparator consists of a series of delay cells and nand gates which function as delay cum control cell.
+The delay cell is named "epc_unit" and implemented as a separate subckt.
+The nand logic gate is created using ngVeri flow in verilog hdl.
+adc_brige and dac_bridge are used to interface the nand_gate in the schematic
+
+
+# Learning Outcomes
+- Understood the mixed signal flow using opensource tools.
+- 
