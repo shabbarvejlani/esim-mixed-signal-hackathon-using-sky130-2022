@@ -67,3 +67,6 @@ Simulation waveform:
 Unfortunately, the simulator output was not as per expecation. 
 It needs to be further investigated if its a tool issue or circuit tuning/setup issue.
 One possible try could be to have the nand gate too in analog schematic using sky130 cells and checking if output matches in analog only simulation.
+
+# Acknowledgements
+
